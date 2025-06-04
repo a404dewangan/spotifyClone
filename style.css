@@ -22,12 +22,13 @@ nav ul{
     background-color: black;
     color: white;
 }
-nav ul li a{
-    color: white;
-    text-decoration: none;
-}
+
 nav ul li{
     padding: 0 12px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: white;
 }
 
 .brand img{
@@ -88,12 +89,13 @@ padding: 0 8px;
 .songItem{
     height: 50px;
     display: flex;
+    justify-content: space-between;
+    align-items: center;
     background-color: white;
     color: black;
     margin: 12px 0;
-    justify-content: space-between;
-    align-items: center;
-    border-radius: 34px;
+   padding: 10px 15px;
+    border-radius: 30px;
 }
 
 .songItem img{
@@ -102,7 +104,12 @@ padding: 0 8px;
     border-radius: 34px;
 }
 .timestamp{
-    margin: 0 23px;
+    /* margin: 0 23px; */
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 14px;
+    min-width: 75px
 }
 .timestamp i{
    cursor: pointer;
